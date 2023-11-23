@@ -1,0 +1,5 @@
+﻿  5.2.cpp
+C:\Users\Student\source\repos\Yrmek\Functions-lab-5-\5.2\5.2.cpp(103,15): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+C:\Users\Student\source\repos\Yrmek\Functions-lab-5-\5.2\5.2.cpp(111,15): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+C:\Users\Student\source\repos\Yrmek\Functions-lab-5-\5.2\5.2.cpp(122,15): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+  5.2.vcxproj -> C:\Users\Student\Source\Repos\Yrmek\Functions-lab-5-\x64\Debug\5.2.exe
