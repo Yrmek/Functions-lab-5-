@@ -13,39 +13,38 @@
 using namespace std ;
 
 long  fact(int);
-double pow(double, long);
+double mypow(double, long);
 double dabs(double);
 
 int main()
 {
-	const double epsilon = pow(10,(-6));
+	const double epsilon = mypow(10,(-6));
 	double x = 0;
 	cout << "enter value of x ( 0 < x <= 1)" << endl;
 	cin >> x;
 	if (x > 1 || x < 0)
 	{
 		cout << "You entered incorrect value" << endl;
-		return 0;
+		return 1;
 	}
 	else
 	{
-
 		double sum = 0;
 		double temp = 0;
 		int k = 1;
 		do
 		{
-			temp = sum;
-			sum = pow((-1), k) * pow(x, 4 * k + 3) / (4 * k + 3) / fact(2 * k + 1);
+			temp = mypow((-1), k) * mypow(x, 4 * k + 3) / (4 * k + 3) / fact(2 * k + 1);
+			sum += temp;
 			k++;
-		} while (dabs(sum - temp) > epsilon);
+		} while (dabs(temp) > epsilon);
 		
 		int counter = 0;
-		k == 2 ? counter = 1 : counter = k;
+		counter = k;
 		cout << "result of summation:" << sum << endl;
-		cout << "amount of summations:" << counter << endl;
-		return 0;
+		cout << "amount of summations:" << counter - 1 << endl;
 	}
+	return 0;
 }
 
 double dabs(double n)
@@ -53,16 +52,20 @@ double dabs(double n)
 	return (n < 0) ? -n : n;
 }
 
-double pow(double base, long pow)
+double mypow(double base, long pow)
 {
-	if (pow == 1) return base;
+	double result = base;
+	if (pow == 1 || base == 1)
+		return result;
 	else
 	{
-		for (int i = 2; i <= pow; i++)
+		double k = dabs(pow);
+		for (int i = 2; i <= k; i++)
 		{
-			base *= base;
+			result *= base;
 		}
-		return base;
+		if (pow < 0) result = 1 / result;
+		return result;
 	}
 }
 
