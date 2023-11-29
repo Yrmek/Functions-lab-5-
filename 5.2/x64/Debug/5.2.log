@@ -1,5 +1,90 @@
 ﻿  5.2.cpp
-C:\Users\Student\source\repos\Yrmek\Functions-lab-5-\5.2\5.2.cpp(103,15): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
-C:\Users\Student\source\repos\Yrmek\Functions-lab-5-\5.2\5.2.cpp(111,15): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
-C:\Users\Student\source\repos\Yrmek\Functions-lab-5-\5.2\5.2.cpp(122,15): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
-  5.2.vcxproj -> C:\Users\Student\Source\Repos\Yrmek\Functions-lab-5-\x64\Debug\5.2.exe
+C:\Users\Yrmek\Desktop\labi c++\Functions (lab #5)\5.2\Header.h(38,15): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+C:\Users\Yrmek\Desktop\labi c++\Functions (lab #5)\5.2\5.2.cpp(28,9): message : выполняется компиляция ссылки на экземпляр шаблон функции "T up<float>(T [])"
+          with
+          [
+              T=float
+          ]
+C:\Users\Yrmek\Desktop\labi c++\Functions (lab #5)\5.2\Header.h(39,24): warning C4244: =: преобразование "int" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Users\Yrmek\Desktop\labi c++\Functions (lab #5)\5.2\Header.h(75,15): warning C4244: инициализация: преобразование "T" в "int", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Users\Yrmek\Desktop\labi c++\Functions (lab #5)\5.2\5.2.cpp(35,9): message : выполняется компиляция ссылки на экземпляр шаблон функции "T InsertSort<float,int>(T [],K &,K &)"
+          with
+          [
+              T=float,
+              K=int
+          ]
+C:\Users\Yrmek\Desktop\labi c++\Functions (lab #5)\5.2\Header.h(87,24): warning C4244: =: преобразование "int" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Users\Yrmek\Desktop\labi c++\Functions (lab #5)\5.2\Header.h(90,26): warning C4244: return: преобразование "K" в "T", возможна потеря данных
+          with
+          [
+              K=int
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\Yrmek\Desktop\labi c++\Functions (lab #5)\5.2\Header.h(51,17): warning C4244: инициализация: преобразование "T" в "int", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Users\Yrmek\Desktop\labi c++\Functions (lab #5)\5.2\5.2.cpp(43,9): message : выполняется компиляция ссылки на экземпляр шаблон функции "T SampleSort<float,int>(T [],K &,K &)"
+          with
+          [
+              T=float,
+              K=int
+          ]
+C:\Users\Yrmek\Desktop\labi c++\Functions (lab #5)\5.2\Header.h(58,30): warning C4244: =: преобразование "T" в "int", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Users\Yrmek\Desktop\labi c++\Functions (lab #5)\5.2\Header.h(63,24): warning C4244: =: преобразование "int" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Users\Yrmek\Desktop\labi c++\Functions (lab #5)\5.2\Header.h(68,28): warning C4244: return: преобразование "K" в "T", возможна потеря данных
+          with
+          [
+              K=int
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\Yrmek\Desktop\labi c++\Functions (lab #5)\5.2\Header.h(19,15): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+C:\Users\Yrmek\Desktop\labi c++\Functions (lab #5)\5.2\5.2.cpp(52,9): message : выполняется компиляция ссылки на экземпляр шаблон функции "T rand<float>(T [])"
+          with
+          [
+              T=float
+          ]
+C:\Users\Yrmek\Desktop\labi c++\Functions (lab #5)\5.2\Header.h(21,27): warning C4244: =: преобразование "int" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Users\Yrmek\Desktop\labi c++\Functions (lab #5)\5.2\Header.h(27,15): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+C:\Users\Yrmek\Desktop\labi c++\Functions (lab #5)\5.2\5.2.cpp(76,9): message : выполняется компиляция ссылки на экземпляр шаблон функции "T down<float>(T [])"
+          with
+          [
+              T=float
+          ]
+C:\Users\Yrmek\Desktop\labi c++\Functions (lab #5)\5.2\Header.h(28,25): warning C4244: =: преобразование "int" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+  5.2.vcxproj -> C:\Users\Yrmek\Desktop\labi c++\Functions (lab #5)\x64\Debug\5.2.exe
