@@ -5,7 +5,7 @@
 
 using namespace std;
 
-int const N = 5;
+int const N = 3;
 
 template <typename T> T* myrand(T (*array)[N])
 {
@@ -27,20 +27,24 @@ template <typename T> T* myprint(T (*array)[N])
         return *array;
 }
 
-template <typename T> T* CollumnBublleSort(T(*array)[N])
+template <typename T> T* CollumnBublleSort(T*array)
 {
     for (int k = 0; k < N - 1; k++)
     {
         for (int j = 0; j < N-1; j++)
         {
-            if (array[0][j] < array[0][j + 1])
+            //if (array[0][j] < array[0][j + 1])
+            if (*(array + j ) < *(array + j + 1) )
             {
                 for (int i = 0; i < N; i++)
                 {
-                    swap(array[i][j], array[i][j + 1]);
+                    int x = *(array + i + (j + i * N));
+                    *(array + i + 1 + (j + i * N)) = x;
+                    *(array + i + (j + i * N)) = *(array + i + 1 + (j + i * N));
+                 //   swap(array[i][j], array[i][j + 1]);
                 }
             }
         }
     }
-    return *array;
+    return array;
 }

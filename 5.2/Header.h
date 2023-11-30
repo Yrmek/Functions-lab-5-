@@ -7,14 +7,23 @@ using namespace std;
 
 int const N = 3;
 
-template <typename T> T rand(T array[]);
+int rand(int array[]);
+float rand(float array[]);
 template <typename T > T up(T array[]);
 template <typename T> T down(T array[]);
 
 template <typename T, typename K> T InsertSort(T array[], K&, K&);
 template <typename T, typename K> T SampleSort(T array[], K&, K&);
 
-template <typename T> T rand(T array[])
+int rand(int array[])
+{
+    srand(time(NULL));
+    for (int i = 0; i < N; i++)
+        array[i] = rand() % 100;
+    return array[N];
+}
+
+float rand(float array[])
 {
     srand(time(NULL));
     for (int i = 0; i < N; i++)

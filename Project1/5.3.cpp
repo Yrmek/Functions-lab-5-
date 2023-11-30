@@ -18,9 +18,10 @@ int main()
 {
 	setlocale(LC_ALL, "");
 	int a[N][N];
+	int* ptr = &a[0][0];
 	myrand(a);
 	myprint(a);
-	CollumnBublleSort(a);
+	CollumnBublleSort(ptr);
 	cout << " " << endl;
 	cout << "Отсортированный массив:" << endl;
 	myprint(a);
