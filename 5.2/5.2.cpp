@@ -31,7 +31,7 @@ int main()
             cout << setw(3) << a[i];
         cout << endl;
 
-        cout << "insert sort" << endl;
+        cout << "insert sort:" << endl;
         InsertSort(a,CompNum,AssignNum);
         for (int i = 0; i < N; i++)
             cout << setw(3) << a[i];
@@ -39,7 +39,7 @@ int main()
         cout << "Кол-во сравнений" << AssignNum << endl;
         cout << "Кол-во присваиваний" << CompNum << endl;
 
-        cout << "sample sort" << endl;
+        cout << "sample sort:" << endl;
         SampleSort(a, CompNum, AssignNum);
         for (int i = 0; i < N; i++)
             cout << setw(3) << a[i];
@@ -54,7 +54,7 @@ int main()
             cout << setw(3) << a[i];
         cout << endl;
 
-        cout << "insert sort" << endl;
+        cout << "insert sort:" << endl;
         InsertSort(a, CompNum, AssignNum);
         for (int i = 0; i < N; i++)
             cout << setw(3) << a[i];
@@ -62,7 +62,7 @@ int main()
         cout << "Кол-во сравнений" << AssignNum << endl;
         cout << "Кол-во присваиваний" << CompNum << endl;
 
-        cout << "sample sort" << endl;
+        cout << "sample sort:" << endl;
         SampleSort(a, CompNum, AssignNum);
         for (int i = 0; i < N; i++)
             cout << setw(3) << a[i];
@@ -78,7 +78,7 @@ int main()
             cout << setw(3) << a[i];
         cout << endl;
 
-        cout << "insert sort" << endl;
+        cout << "insert sort:" << endl;
         InsertSort(a, CompNum, AssignNum);
         for (int i = 0; i < N; i++)
             cout << setw(3) << a[i];
@@ -86,7 +86,7 @@ int main()
         cout << "Кол-во сравнений" << AssignNum << endl;
         cout << "Кол-во присваиваний" << CompNum << endl;
 
-        cout << "sample sort" << endl;
+        cout << "sample sort:" << endl;
         SampleSort(a, CompNum, AssignNum);
         for (int i = 0; i < N; i++)
             cout << setw(3) << a[i];

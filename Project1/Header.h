@@ -38,9 +38,9 @@ template <typename T> T* CollumnBublleSort(T*array)
             {
                 for (int i = 0; i < N; i++)
                 {
-                    int x = *(array + i + (j + i * N));
-                    *(array + i + 1 + (j + i * N)) = x;
-                    *(array + i + (j + i * N)) = *(array + i + 1 + (j + i * N));
+                    int x = *(array  + (j + i * N));
+                    *(array  + (j + i * N)) = *(array + 1 + (j + i * N));
+                    *(array + 1 + (j + i * N)) = x;
                  //   swap(array[i][j], array[i][j + 1]);
                 }
             }
