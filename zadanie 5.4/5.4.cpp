@@ -18,10 +18,7 @@ int main()
 	cout << "Enter string :" << endl;
 	cin.getline(S, N);
 	char tempS[N]{};
-	strcat_s(tempS,N,S);
-	/*cout << "Enter value of Symbol position and value of length " << endl;*/
 	int amount = 0;
-	/*cin >> pos >> amount;*/
 
 	for (int i = 0; i < strlen(S); i++)
 	{
@@ -34,10 +31,11 @@ int main()
 		}
 		if (amount > 1)
 		{
+			for (int g = 0; g < strlen(S); g++)
+			{
+				tempS[g] = *(S + g);
+			}
 			char S2[N] = { '(',amount,')',*(S + i + k)};
-		/*	int TempAmount = amount;
-			if (amount < 4) TempAmount = 4;
-			if (amount > 4 ) TempAmount = 5;*/
 			char* pS2 = 0;
 			pS2 = &S2[0];
 			S1_S2(S, tempS, N, pS2, i, amount);
