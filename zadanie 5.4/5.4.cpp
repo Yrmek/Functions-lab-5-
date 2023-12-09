@@ -19,10 +19,7 @@ int main()
 	cin.getline(S, N);
 	char tempS[N]{};
 	strcat_s(tempS,N,S);
-
-	/*cout << "Enter value of Symbol position and value of length " << endl;*/
 	int amount = 0;
-	/*cin >> pos >> amount;*/
 
 	for (int i = 0; i < strlen(S); i++)
 	{
@@ -52,7 +49,7 @@ int main()
 			char temp[P] = {};
 			temp[0] = *(S + i + k);
 			strcat_s(S2,temp);
-			/*char S2[P] = {'(',static_cast<char>(amount),')',*(S + i + k)}; */
+			/*char S2[P] = {'(',amount,')',*(S + i + k)}; */
 			char S1[P]{};
 			S1[0] = '\0';
 			for (int j = 0; j < amount; j++)
