@@ -5,17 +5,15 @@
 
 using namespace std;
 
-int const N = 3;
+int rand(int array[], const int N);
+float rand(float array[], const int N);
+template <typename T > T up(T array[], int const N);
+template <typename T> T down(T array[], int const N);
 
-int rand(int array[]);
-float rand(float array[]);
-template <typename T > T up(T array[]);
-template <typename T> T down(T array[]);
+template <typename T, typename K> T InsertSort(T array[], int const N, K&, K&);
+template <typename T, typename K> T SampleSort(T array[], int const N, K&, K&);
 
-template <typename T, typename K> T InsertSort(T array[], K&, K&);
-template <typename T, typename K> T SampleSort(T array[], K&, K&);
-
-int rand(int array[])
+int rand(int array[], const int N)
 {
     srand(time(NULL));
     for (int i = 0; i < N; i++)
@@ -23,15 +21,15 @@ int rand(int array[])
     return array[N];
 }
 
-float rand(float array[])
+float rand(float array[], const int N)
 {
     srand(time(NULL));
     for (int i = 0; i < N; i++)
-        array[i] = rand() % 100;
+        array[i] = 0.1 * (rand()%10) * (rand() % 100);
     return array[N];
 }
 
-template <typename T> T down(T array[])
+template <typename T> T down(T array[],int const N)
 {
     srand(time(NULL));
     array[0] = (-rand() % 100);
@@ -42,7 +40,7 @@ template <typename T> T down(T array[])
     return array[N];
 }
 
-template <typename T> T up(T array[])
+template <typename T> T up(T array[], int const N)
 {
     srand(time(NULL));
     array[0] = (rand() % 100);
@@ -53,11 +51,11 @@ template <typename T> T up(T array[])
     return array[N];
 }
 
-template <typename T, typename K> T SampleSort(T array[] , K &Comp , K &Assign)
+template <typename T, typename K> T SampleSort(T array[], int const N, K &Comp , K &Assign)
 {
     for (int i = 0; i < N - 1; i++)
     {
-        int min = array[i];
+        T min = array[i];
         Assign++;
         int tempmin = i;
         for (int j = i + 1; j < N; j++)
@@ -77,11 +75,11 @@ template <typename T, typename K> T SampleSort(T array[] , K &Comp , K &Assign)
     return array[N] , Comp , Assign;
 }
 
-template <typename T, typename K> T InsertSort(T array[], K &Comp, K &Assign)
+template <typename T, typename K> T InsertSort(T array[],int const N, K &Comp, K &Assign)
 {
     for (int i = 0; i < N; i++)
     {
-        int x = array[i];
+        T x = array[i];
         Assign++;
         int j = i - 1;
         Comp ++;

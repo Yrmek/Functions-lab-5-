@@ -8,6 +8,7 @@ const int N = 100;
 
 void replaceSubstring(char *s, char *s1, char *s2) 
 {
+
     int s1Len = strlen(s1);
     int s2Len = strlen(s2);
     char *p = strstr(s, s1);
