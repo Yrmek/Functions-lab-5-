@@ -13,12 +13,13 @@ using namespace std;
 
 int main()
 {
-	const int P = 10;
+	const int P = 20;
 	char S[N];
 	cout << "Enter string :" << endl;
 	cin.getline(S, N);
 	char tempS[N]{};
 	strcat_s(tempS,N,S);
+
 	/*cout << "Enter value of Symbol position and value of length " << endl;*/
 	int amount = 0;
 	/*cin >> pos >> amount;*/
@@ -34,15 +35,33 @@ int main()
 		}
 		if (amount > 1)
 		{
-			char S2[N] = { '(',amount,')',*(S + i + k)};
-		/*	int TempAmount = amount;
-			if (amount < 4) TempAmount = 4;
-			if (amount > 4 ) TempAmount = 5;*/
-			char* pS2 = 0;
-			pS2 = &S2[0];
-			S1_S2(S, tempS, N, pS2, i, amount);
+			char S2[P] = {'('};
+			switch (amount)
+			{
+			case 1: strcat_s(S2, "1"); break;
+			case 2: strcat_s(S2, "2"); break;
+			case 3: strcat_s(S2, "3"); break;
+			case 4: strcat_s(S2, "4"); break;
+			case 5: strcat_s(S2, "5"); break;
+			case 6: strcat_s(S2, "6"); break;
+			case 7: strcat_s(S2, "7"); break;
+			case 8: strcat_s(S2, "8"); break;
+			case 9: strcat_s(S2, "9"); break;
+			}
+			strcat_s(S2,")");
+			char temp[P] = {};
+			temp[0] = *(S + i + k);
+			strcat_s(S2,temp);
+			/*char S2[P] = {'(',static_cast<char>(amount),')',*(S + i + k)}; */
+			char S1[P]{};
+			S1[0] = '\0';
+			for (int j = 0; j < amount; j++)
+			{
+				S1[j] = *(S + i + k);
+			}
+			replaceSubstring(S, S1, S2);
 		}
 	}
-	cout <<"Changed string :  "<< S;
+	cout <<"Changed string : "<< S;
 	return 0;
 }
