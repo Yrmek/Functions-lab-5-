@@ -1,7 +1,8 @@
 //2. сортировкой выбором и вставками;
 #include <iostream>
 #include <iomanip>
-#include <time.h>   
+#include <time.h>
+#include <math.h>
 #include "Header.h"
 
 using namespace std;
@@ -15,8 +16,10 @@ int main()
     int Msamp = 0, Csamp = 0;
     Cins = 1 / 2.0 * (N * N + N) - 1;
     Mins = 1 / 2.0 * (N * N + 3 * N - 4);
-    
-
+    Msamp = labs(N * N / 4) + 3 * (N - 1);
+    Csamp = (N * N - N) / 2;
+    cout << "Amount of assignments(Insert sort | Sample sort) :" << Mins << " | " << Msamp << endl;
+    cout << "Amount of comparsions(Insert sort | Sample sort) :" << Cins << " | " << Csamp << endl;
     enum  enmArrayInit
     {
         FromUP = 1, WithIntRand, WithFloatRand, FromDOWN,
